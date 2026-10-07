@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STEP OUT AI — Less Screen. More World.</title>
+
+    <meta name="description"
+        content="STEP OUT AI creates personalized outdoor adventures powered by AI. Less screen. More world.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            <span>STEP<span class="logo-accent">OUT</span></span>
+            <small>AI</small>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#adventure">Adventure</a>
+            <a href="#progress">Progress</a>
+        </nav>
+
+        <button class="nav-start" onclick="scrollToAdventure()">
+            Start Exploring
+            <span>↗</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    AI-POWERED OUTDOOR EXPLORATION
+                </div>
+
+                <h1>
+                    Your world is
+                    <span>bigger</span>
+                    than your screen.
+                </h1>
+
+                <p class="hero-description">
+                    STEP OUT AI creates personalized outdoor missions
+                    that turn screen time into real-world adventures.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" onclick="scrollToAdventure()">
+                        Start an Adventure
+                        <span>→</span>
+                    </button>
+
+                    <button class="secondary-btn" onclick="showHowItWorks()">
+                        <span class="play-icon">▶</span>
+                        How it works
+                    </button>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Choose</span>
+                    </div>
+
+                    <div class="stat-line"></div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Explore</span>
+                    </div>
+
+                    <div class="stat-line"></div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Complete</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero visual -->
+            <div class="hero-visual">
+
+                <div class="orbital-ring ring-one"></div>
+                <div class="orbital-ring ring-two"></div>
+
+                <div class="nature-card">
+
+                    <div class="nature-top">
+                        <span class="mini-label">TODAY'S QUEST</span>
+                        <span class="quest-icon">🌿</span>
+                    </div>
+
+                    <div class="nature-icon">
+                        🌳
+                    </div>
+
+                    <h3>Find Something<br>Worth Remembering.</h3>
+
+                    <p>
+                        Explore your surroundings and discover
+                        something you've never noticed before.
+                    </p>
+
+                    <div class="quest-footer">
+                        <span>⏱ 10 MIN</span>
+                        <span>+50 XP</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-top">
+                    <span>🌱</span>
+                    <div>
+                        <strong>Touch Grass</strong>
+                        <small>Mission ready</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <span>🔥</span>
+                    <div>
+                        <strong id="heroStreak">3 day streak</strong>
+                        <small>Keep going</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHY SECTION -->
+        <section class="why-section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">THE IDEA</span>
+
+                <h2>
+                    Less scrolling.
+                    <br>
+                    <span>More living.</span>
+                </h2>
+
+                <p>
+                    STEP OUT AI uses open AI technology to create
+                    small outdoor challenges designed to get you
+                    moving, exploring and noticing the world around you.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">01</div>
+                    <div class="feature-icon">🧠</div>
+
+                    <h3>AI-Powered</h3>
+
+                    <p>
+                        Get personalized missions based on your
+                        interests, time and surroundings.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">02</div>
+                    <div class="feature-icon">📵</div>
+
+                    <h3>Phone Down</h3>
+
+                    <p>
+                        Your screen is only the starting point.
+                        The real experience happens outside.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">03</div>
+                    <div class="feature-icon">🌍</div>
+
+                    <h3>Real World</h3>
+
+                    <p>
+                        Explore nature, discover places and
+                        create memories beyond the screen.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADVENTURE -->
+        <section id="adventure" class="adventure-section">
+
+            <div class="section-heading center">
+
+                <span class="eyebrow">YOUR ADVENTURE</span>
+
+                <h2>
+                    What do you want
+                    <span>to explore?</span>
+                </h2>
+
+                <p>
+                    Choose a vibe and let STEP OUT AI create
+                    your next mission.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <button class="category-card active" data-category="nature" onclick="selectCategory(this)">
+
+                    <span class="category-icon">🌿</span>
+
+                    <span class="category-title">Nature</span>
+
+                    <span class="category-description">
+                        Trees, plants, wildlife & discovery
+                    </span>
+
+                    <span class="category-arrow">↗</span>
+
+                </button>
+
+
+                <button class="category-card" data-category="fitness" onclick="selectCategory(this)">
+
+                    <span class="category-icon">🏃</span>
+
+                    <span class="category-title">Movement</span>
+
+                    <span class="category-description">
+                        Walk, run, stretch & move
+                    </span>
+
+                    <span class="category-arrow">↗</span>
+
+                </button>
+
+
+                <button class="category-card" data-category="photography" onclick="selectCategory(this)">
+
+                    <span class="category-icon">📸</span>
+
+                    <span class="category-title">Photography</span>
+
+                    <span class="category-description">
+                        Find beauty in ordinary places
+                    </span>
+
+                    <span class="category-arrow">↗</span>
+
+                </button>
+
+
+                <button class="category-card" data-category="explore" onclick="selectCategory(this)">
+
+                    <span class="category-icon">🧭</span>
+
+                    <span class="category-title">Explore</span>
+
+                    <span class="category-description">
+                        Discover something new nearby
+                    </span>
+
+                    <span class="category-arrow">↗</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Mission Generator -->
+            <div class="mission-area">
+
+                <div class="mission-card" id="missionCard">
+
+                    <div class="mission-header">
+
+                        <div>
+                            <span class="mini-label">AI MISSION GENERATOR</span>
+                            <h3 id="missionCategory">Nature Quest</h3>
+                        </div>
+
+                        <div class="ai-badge">
+                            <span></span>
+                            AI READY
+                        </div>
+
+                    </div>
+
+
+                    <div class="mission-content">
+
+                        <div class="mission-visual" id="missionVisual">
+                            🌳
+                        </div>
+
+                        <div class="mission-text">
+
+                            <span class="mission-label">
+                                YOUR NEXT MISSION
+                            </span>
+
+                            <h2 id="missionTitle">
+                                Find a tree you've never really noticed before.
+                            </h2>
+
+                            <p id="missionDescription">
+                                Walk outside and find an interesting tree.
+                                Spend a minute observing its shape, texture
+                                and surroundings.
+                            </p>
+
+                            <div class="mission-meta">
+
+                                <span>
+                                    ⏱
+                                    <strong id="missionTime">10 min</strong>
+                                </span>
+
+                                <span>
+                                    ⭐
+                                    <strong id="missionXP">50 XP</strong>
+                                </span>
+
+                                <span>
+                                    ◉
+                                    <strong id="missionDifficulty">Easy</strong>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mission-actions">
+
+                        <button class="primary-btn" onclick="startMission()">
+
+                            Start Mission
+                            <span>→</span>
+
+                        </button>
+
+                        <button class="refresh-btn" onclick="generateMission()">
+
+                            ↻ Generate another
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHONE DOWN -->
+        <section class="phone-section">
+
+            <div class="phone-content">
+
+                <span class="eyebrow">THE MOST IMPORTANT FEATURE</span>
+
+                <h2>
+                    Put the phone
+                    <span>down.</span>
+                </h2>
+
+                <p>
+                    STEP OUT isn't another app designed to keep you
+                    staring at your screen. Start your mission, lock
+                    your phone and go experience it.
+                </p>
+
+                <button class="phone-btn" onclick="startPhoneDown()">
+                    📵 Enter Phone Down Mode
+                </button>
+
+            </div>
+
+            <div class="phone-visual">
+
+                <div class="phone-device">
+
+                    <div class="phone-camera"></div>
+
+                    <div class="phone-screen">
+
+                        <span>STEP OUT</span>
+
+                        <div class="phone-leaf">🌿</div>
+
+                        <strong>PHONE DOWN</strong>
+
+                        <small>
+                            Your adventure<br>
+                            starts now.
+                        </small>
+
+                        <div class="phone-line"></div>
+
+                        <small>10:00</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+        <section id="progress" class="progress-section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">YOUR PROGRESS</span>
+
+                <h2>
+                    Keep stepping
+                    <span>outside.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="dashboard">
+
+                <div class="dashboard-card xp-card">
+
+                    <span class="dashboard-label">TOTAL XP</span>
+
+                    <strong id="xpDisplay">450</strong>
+
+                    <div class="xp-bar">
+                        <div id="xpProgress"></div>
+                    </div>
+
+                    <small>
+                        550 XP until next level
+                    </small>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span class="dashboard-icon">🔥</span>
+
+                    <strong id="streakDisplay">3</strong>
+
+                    <span class="dashboard-label">DAY STREAK</span>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span class="dashboard-icon">🌱</span>
+
+                    <strong id="missionDisplay">7</strong>
+
+                    <span class="dashboard-label">MISSIONS</span>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span class="dashboard-icon">🏆</span>
+
+                    <strong id="badgeDisplay">3</strong>
+
+                    <span class="dashboard-label">BADGES</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="badges">
+
+                <div class="badge unlocked">
+                    <span>🌱</span>
+                    <strong>First Step</strong>
+                    <small>First mission</small>
+                </div>
+
+                <div class="badge unlocked">
+                    <span>🌳</span>
+                    <strong>Nature Explorer</strong>
+                    <small>5 missions</small>
+                </div>
+
+                <div class="badge unlocked">
+                    <span>📵</span>
+                    <strong>Phone Down</strong>
+                    <small>10 min offline</small>
+                </div>
+
+                <div class="badge locked">
+                    <span>🌎</span>
+                    <strong>World Explorer</strong>
+                    <small>10 locations</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OPEN AI -->
+        <section class="open-section">
+
+            <div class="open-content">
+
+                <span class="eyebrow">BUILT DIFFERENTLY</span>
+
+                <h2>
+                    Open AI.
+                    <br>
+                    <span>Open world.</span>
+                </h2>
+
+                <p>
+                    STEP OUT AI is designed around open-source and
+                    open-weight AI. That means models can run locally,
+                    be swapped, customized and improved without locking
+                    the experience to a single closed provider.
+                </p>
+
+                <div class="open-points">
+
+                    <div>
+                        <span>✓</span>
+                        <strong>Local-first AI</strong>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <strong>Privacy focused</strong>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <strong>Model freedom</strong>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <strong>Built to experiment</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="open-mark">
+                <span>OPEN</span>
+                <strong>AI</strong>
+                <small>FOR THE REAL WORLD</small>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            ✦ STEP<span>OUT</span> AI
+        </div>
+
+        <p>
+            Less Screen. More World.
+        </p>
+
+        <span class="footer-challenge">
+            Built for the Touch Grass Challenge 🌱
+        </span>
+
+    </footer>
+
+
+    <!-- MISSION MODAL -->
+    <div class="modal-overlay" id="missionModal">
+
+        <div class="modal">
+
+            <button class="modal-close" onclick="closeModal()">×</button>
+
+            <div class="modal-icon" id="modalIcon">
+                🌳
+            </div>
+
+            <span class="eyebrow">MISSION ACTIVE</span>
+
+            <h2 id="modalTitle">
+                Find a tree you've never noticed before.
+            </h2>
+
+            <p id="modalDescription">
+                Your mission has started. Go outside and explore.
+            </p>
+
+            <div class="timer" id="timer">
+                10:00
+            </div>
+
+            <div class="modal-actions">
+
+                <button class="primary-btn" onclick="completeMission()">
+                    I Completed It ✓
+                </button>
+
+                <button class="secondary-btn" onclick="cancelMission()">
+                    Cancel Mission
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HOW IT WORKS MODAL -->
+    <div class="modal-overlay" id="howModal">
+
+        <div class="modal how-modal">
+
+            <button class="modal-close" onclick="closeHowModal()">×</button>
+
+            <span class="eyebrow">HOW IT WORKS</span>
+
+            <h2>Three steps.<br><span>One real adventure.</span></h2>
+
+            <div class="how-step">
+                <span>01</span>
+                <div>
+                    <strong>Choose your vibe</strong>
+                    <p>Nature, movement, photography or exploration.</p>
+                </div>
+            </div>
+
+            <div class="how-step">
+                <span>02</span>
+                <div>
+                    <strong>Get your AI mission</strong>
+                    <p>STEP OUT creates a small challenge for you.</p>
+                </div>
+            </div>
+
+            <div class="how-step">
+                <span>03</span>
+                <div>
+                    <strong>Put the phone down</strong>
+                    <p>Go outside and actually do it.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span>✓</span>
+        <p id="toastMessage">Mission complete!</p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
